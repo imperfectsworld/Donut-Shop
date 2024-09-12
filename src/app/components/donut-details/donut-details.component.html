@@ -1,0 +1,18 @@
+<h1>Donuts</h1>
+
+<h3>Name: {{donutResult.name}}</h3>
+<h3>Calories: {{donutResult.calories}}</h3>
+
+<h3>Extras: </h3>
+<ul>
+    @for (d of donutResult.extras; track $index) {
+
+        <li>
+            {{d}}
+        </li>
+    }
+    
+</ul>
+<img class = "donutPic" src = "{{donutResult.photo}}">
+<h3> <a href = "{{donutResult.photo_attribution}}"> Photo Attribution </a></h3>
+
